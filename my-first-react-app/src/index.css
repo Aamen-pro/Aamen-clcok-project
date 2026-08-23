@@ -1,0 +1,61 @@
+body{
+    background-image: url("./assets/R.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin:0;
+}
+
+.clock{
+    color:white;
+    font-size: 6rem;
+    font-family: monospace;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px;
+    
+
+}
+.clock-container{
+    backdrop-filter: blur(5px);
+    width: max-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+}
+
+.app-layout {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.digital-clock-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.stopwatch-container {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.analog-clock-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
